@@ -1,0 +1,21 @@
+resp = 'S'
+soma = 0
+quant = 0
+media = 0
+maior = 0
+menor = 0
+while resp in 'Ss':
+    num = int(input('Digite um número: '))
+    soma = soma + num
+    quant = quant + 1
+    if quant == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+    resp = str(input('Quer continuar? [S/N] ')).strip().upper()
+media = soma / quant
+print('A média entre eles é {:.2f}'.format(media))
+print('O maior número é {} e o menor {}'.format(maior, menor))
