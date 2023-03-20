@@ -1,0 +1,17 @@
+SP = 67836.43
+RJ = 36678.66
+MG = 29229.88
+ES = 27165.48
+Outros = 19849.53
+total = (SP + RJ + MG + ES + Outros)
+sp = (SP/total)*100
+rj = (RJ/total)*100
+mg = (MG/total)*100
+es = (ES/total)*100
+outros = (Outros/total)*100
+print(f'O total de faturamento mensal é R${total}')
+print(f'A porcentagem de SP é {sp:.2f}%')
+print(f'A porcentagem de SP é {rj:.2f}%')
+print(f'A porcentagem de SP é {mg:.2f}%')
+print(f'A porcentagem de SP é {es:.2f}%')
+print(f'A porcentagem de SP é {outros:.2f}%')
